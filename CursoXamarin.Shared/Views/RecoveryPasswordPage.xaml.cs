@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace CursoXamarin.Shared.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Teste : ContentPage
+    public partial class RecoveryPasswordPage : ContentPage
     {
-        public Teste()
+        public RecoveryPasswordPage()
         {
             InitializeComponent();
         }

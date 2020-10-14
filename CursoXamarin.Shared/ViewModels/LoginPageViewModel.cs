@@ -54,6 +54,9 @@ namespace CursoXamarin.Shared.ViewModels
             return _navigationService.NavigateAsync("EntryPage");
         }
 
+        private DelegateCommand _recoveryPassword;
+        public DelegateCommand RecoveryPassword => _recoveryPassword ?? (_recoveryPassword = new DelegateCommand(async () => await _navigationService.NavigateAsync("RecoveryPasswordPage")));
+
         //Criar um delegate Command para executar um comando da página
         private Prism.Commands.DelegateCommand _loginCommand;
         public Prism.Commands.DelegateCommand LoginCommand => _loginCommand ?? (_loginCommand = new DelegateCommand(async () => await LoginAsync()));

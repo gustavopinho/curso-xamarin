@@ -71,7 +71,7 @@
                 <Button
                     Margin="35,25"
                     BackgroundColor="Bisque"
-                    Command="{Binding EsqueciSenhaCommand}"
+                    Command="{Binding RecoveryPassword}"
                     CornerRadius="20"
                     FontSize="12"
                     Text="Esqueci minha Senha."
