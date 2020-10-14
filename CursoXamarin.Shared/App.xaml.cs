@@ -1,10 +1,10 @@
-﻿using CursoXamarin.Views;
+﻿using CursoXamarin.Shared.Views;
 using Prism;
 using Prism.Ioc;
 using Prism.Unity;
 using Xamarin.Forms;
 
-namespace CursoXamarin
+namespace CursoXamarin.Shared
 {
     public partial class App : PrismApplication
     {

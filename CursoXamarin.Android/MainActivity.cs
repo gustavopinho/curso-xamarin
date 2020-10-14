@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using CursoXamarin.Shared;
 
 namespace CursoXamarin.Droid
 {

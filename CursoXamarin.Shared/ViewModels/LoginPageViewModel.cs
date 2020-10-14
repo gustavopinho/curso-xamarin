@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CursoXamarin.ViewModels
+namespace CursoXamarin.Shared.ViewModels
 {
     
     public class LoginPageViewModel : ViewModelBase

@@ -1,6 +1,6 @@
 using System;
 
-namespace Helpers.FontAwesome
+namespace CursoXamarin.Shared.Helpers.FontAwesome
 {
     /// <summary>
     /// The unicode values for all FontAwesome icons.
