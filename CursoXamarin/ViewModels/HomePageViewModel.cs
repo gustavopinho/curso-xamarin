@@ -1,5 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,22 +8,11 @@ using System.Threading.Tasks;
 
 namespace CursoXamarin.ViewModels
 {
-    public class HomePageViewModel
+    public class HomePageViewModel: ViewModelBase
     {
-        protected readonly INavigationService _navigationService;
-
-        public HomePageViewModel(INavigationService navigationService)
+        public HomePageViewModel(IPageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
-            _navigationService = navigationService;
-        }
-
-        private DelegateCommand _myCommand;
-
-        public DelegateCommand MyCommand => _myCommand ?? (_myCommand = new DelegateCommand(async () => await MyCommandAsync()));
-
-        private Task MyCommandAsync()
-        {
-            return _navigationService.NavigateAsync("EntryPage");
+            base.PageTitle = "Titulo do App";
         }
     }
 }

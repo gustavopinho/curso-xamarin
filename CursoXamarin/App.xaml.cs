@@ -13,7 +13,7 @@ namespace CursoXamarin
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("HomePage");
+            NavigationService.NavigateAsync("LoginPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -21,6 +21,10 @@ namespace CursoXamarin
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<HomePage>();
             containerRegistry.RegisterForNavigation<EntryPage>();
+            containerRegistry.RegisterForNavigation<LoginPage>();
+            containerRegistry.RegisterForNavigation<MainTabbedPage>();
+            containerRegistry.RegisterForNavigation<ProfilePage>();
+            containerRegistry.RegisterForNavigation<SettingPage>();
         }
     }
 }
