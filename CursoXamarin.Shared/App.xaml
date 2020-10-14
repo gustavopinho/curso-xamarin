@@ -6,7 +6,28 @@
     <Application.Resources>
         <ResourceDictionary>
             <!--Global Styles-->
+            
+            <!-- Definição de cores-->
             <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Color x:Key="RedApple">red</Color>
+            
+            <!-- Definição de Fontes -->
+            <OnPlatform x:TypeArguments="x:String" 
+                        x:Key="RegularFontFamily">
+                <On Platform="Android"
+                    Value="sans-serif" />
+                <On Platform="iOS" 
+                    Value="Montserrat-Regular" />
+            </OnPlatform>
+            
+            <!-- Estilo para Controles -->
+            <Style 
+                x:Key="CorpLabel" 
+                TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource RedApple}" />
+            </Style>
+            
+            
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />

@@ -14,11 +14,13 @@
                 <Label Text="{x:Static fontawesome:FontAwesomeIcons.AppleAlt}"
                        FontFamily="{StaticResource FontAwesomeSolid}" 
                        FontSize="70"
-                       TextColor="Red"
+                       TextColor="{StaticResource RedApple}"
                        HorizontalTextAlignment="Center"/>
-                <Label Text="Red Apple"
+                
+                <!-- Utilização do style criado no App.xaml -->
+                    <Label Text="Red Apple"
+                       Style="{StaticResource CorpLabel}"
                        FontSize="45"
-                       TextColor="Red"
                        HorizontalTextAlignment="Center"/>
             </StackLayout>
 
